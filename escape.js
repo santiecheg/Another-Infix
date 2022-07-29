@@ -9,7 +9,9 @@ while (actual!=25){
     if (actual>=26){alert("oooops..."+" "+actual+" "+"No era, es un numero mas chico")};
     if (vida==1){alert("No conseguiste adivinar pero igualmente pudiste escapar");break}; 
     if (actual==25){alert("Adivinaste, pudiste escapar");break}
-
+    if ((actual>101)||(actual<0)) {alert("solo números de 1 a 100... a los tontos no les resto intentos");
+    vida=vida+1;}
+    
     vida=vida-1;
     intentos=vida;
     alert("Intenta de nuevo, te quedan"+" "+vida+" "+"intentos");
